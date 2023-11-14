@@ -1,0 +1,22 @@
+/* .promo-list {
+    display: flex;
+    column-gap: 9px;
+
+}
+
+.promo-list li {
+    border-radius: 30px;
+    background: #F9F9F9;
+    padding: 8px 25px;
+    color: #2C2C2C;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.24px;
+    cursor: pointer;
+}
+
+.promo-list li.active {
+    background: #282828;
+    color: #fff
+} */

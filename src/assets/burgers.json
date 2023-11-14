@@ -1,0 +1,53 @@
+[
+    {
+        "id": 0,
+        "imageUrl": "img/burgers.webp",
+        "title": "Beef",
+        "types": [0, 1],
+        "sizes": [26, 30, 40],
+        "price": 3,
+        "category": 0,
+        "rating": 4
+    },
+    {
+        "id": 1,
+        "imageUrl": "img/burgers.webp",
+        "title": "Chicken",
+        "types": [0],
+        "sizes": [26, 40],
+        "price": 2,
+        "category": 4,
+        "rating": 4
+    },
+    {
+        "id": 2,
+        "imageUrl": "img/burgers.webp",
+        "title": "Spicy",
+        "types": [0],
+        "sizes": [30, 40],
+        "price": 3,
+        "category": 2,
+        "rating": 4
+    },
+    {
+        "id": 3,
+        "imageUrl": "img/burgers.webp",
+        "title": "Pig",
+        "types": [0, 1],
+        "sizes": [26, 30, 40],
+        "price": 4,
+        "category": 5,
+        "rating": 4
+    },
+    {
+        "id": 4,
+        "imageUrl": "img/burgers.webp",
+        "title": "Pig big",
+        "types": [0],
+        "sizes": [26, 30, 40],
+        "price": 4,
+        "category": 1,
+        "rating": 3
+    }
+
+]

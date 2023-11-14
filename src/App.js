@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import { createContext, useState } from 'react';
+import { useSelector, useDuspatch } from 'react-redux';
+import axios from 'axios';
+
+import Home from './pages/Home';
+import Cart from './pages/Cart';
+import Error from './pages/Error';
+
+import Header from './components/Header/Header';
+
+import './scss/app.scss'
+
+export const SearchContext = createContext()
 
 function App() {
+  const [searchValue, setSearchValue] = useState('')
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+     <SearchContext.Provider value={{searchValue, setSearchValue}}>
+      <Header />
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='Cart' element={<Cart/>}/>
+          <Route path='*' element={<Error/>}/>
+        </Routes>
+     </SearchContext.Provider>
     </div>
   );
 }
