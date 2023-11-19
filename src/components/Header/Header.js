@@ -10,7 +10,8 @@ import { AiOutlineShoppingCart } from 'react-icons/ai'
 
 function Header() {
     const {items, totalPrice} = useSelector(state => state.cart);
-    console.log(items)
+
+    const totalCount = items.reduce((sum, item) => sum + item.count, 0) 
 
     return (
         <div className='header'>
@@ -31,7 +32,7 @@ function Header() {
                 <span>{totalPrice} $</span>
                 <div className="header-right__delimiter"></div>
                 <AiOutlineShoppingCart/>
-                <span className='header-right__relative'>{items.length}</span>
+                <span className='header-right__relative'>{totalCount}</span>
             </Link>
         </div>
         </div>
