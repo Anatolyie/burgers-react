@@ -4,13 +4,13 @@ import { useSelector } from "react-redux";
 
 import './Header.css'
 
-import burgersImg from '../../assets/img/burgers.webp'
 import  logo  from '../../assets/img/logo.jpg'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 
 
 function Header() {
     const {items, totalPrice} = useSelector(state => state.cart);
+    console.log(items)
 
     return (
         <div className='header'>
