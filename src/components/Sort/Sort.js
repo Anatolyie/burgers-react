@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// import './Sort.css'
 import '../../scss/components/_sort.scss'
 import { useSelector, useDispatch } from 'react-redux';
 import { setSort } from '../../redux/slices/filterSlice';

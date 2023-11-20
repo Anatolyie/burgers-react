@@ -22,7 +22,6 @@ function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   const onChangeCategory = (id) => {
-    console.log(id)
     dispatch(setCategoryId(id))
   }
 
@@ -36,10 +35,12 @@ function Home() {
           setIsLoading(false)
       })
 
+    
+
         window.scrollTo(0, 0);
     }, [categoryId, sortType]);
 
-  // const skeletons = [...new Array(6)].map((_, index) => <Skeleton key={index}/>)
+  const skeletons = [...new Array(6)].map((_, index) => <Skeleton key={index}/>)
 
     return (
       <>
@@ -52,7 +53,7 @@ function Home() {
           <h2 className="content__title">All Burgers</h2>
           <div className="content__items">
             {
-              isLoading ? [...new Array(6)].map((_, index) => <Skeleton key={index}/>)
+              isLoading ? skeletons
               :
               items.filter(obj => {
                 if ((obj.title).toLowerCase().includes(searchValue.toLowerCase())) {
