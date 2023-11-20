@@ -29,6 +29,9 @@
   }
 }
 
+.cart-content-left  {
+    font-size: 30px;
+}
 .cart-content-left span{
     color: #000;
     font-size: 32px;
@@ -44,7 +47,13 @@
 
 .cart-content-right {
     cursor: pointer;
+    font-size: 25px;
 }
+
+.cart-content-right span:hover {
+    color: #262222;
+}
+
 .cart-content-right span{
     color: #B6B6B6;
     font-size: 16px;
@@ -75,6 +84,11 @@
 .cart-content__list-img {
     width: 80px;
     height: 80px;
+}
+
+.cart-content__list-delete {
+    font-size: 23px;
+    opacity: 0.6;
 }
 
 @media (max-width: 592px) {
@@ -256,4 +270,10 @@
         height: 30px;
         margin-top: 10px;
   }
+}
+
+.cart-empty {
+    text-align: center;
+    font-size: 30px;
+    color: #FE5F1E;
 }

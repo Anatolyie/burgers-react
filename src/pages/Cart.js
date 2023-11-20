@@ -33,10 +33,12 @@ function Cart() {
                 </div>
             </div>
 
-                {
+                { totalCount !== 0 ?
                     items.map((item, index) => (
                         <CartContent key={index} {...item}/>
                     ))
+                    :
+                    <div className="cart-empty">Shopping cart is empty, please add products</div>
                 }
 
 
