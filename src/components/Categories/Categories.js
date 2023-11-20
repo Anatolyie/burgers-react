@@ -4,7 +4,6 @@ import './Categories.css'
 import '../../scss/app.scss'
 
 function Categories({ value, onChangeCategory }) {
-    const [activeIndex, setActiveIndex] = useState(0);
 
     const categories = [
         'All', 'Vegetarians', 'Spicy', 'Chicken', 'Pig', 'Beef'

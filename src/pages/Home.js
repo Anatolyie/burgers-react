@@ -39,7 +39,7 @@ function Home() {
         window.scrollTo(0, 0);
     }, [categoryId, sortType]);
 
-  const skeletons = [...new Array(6)].map((_, index) => <Skeleton key={index}/>)
+  // const skeletons = [...new Array(6)].map((_, index) => <Skeleton key={index}/>)
 
     return (
       <>
@@ -59,7 +59,7 @@ function Home() {
                   return true
                 }
               })
-              .map((obj, index) => (
+              .map((obj) => (
                 <Burgers 
                   key={obj.id}
                   {...obj}
