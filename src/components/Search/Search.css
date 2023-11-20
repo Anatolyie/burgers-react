@@ -50,3 +50,27 @@
     cursor: pointer;
     opacity: 1;
 }
+
+.error {
+    display: flex;
+    flex-direction: column;
+    color: #f57308;
+    text-align: center;
+}
+
+.error button {
+    border: 1px solid, rgba(0, 0, 0, 0.3);
+    width: 130px;
+    height: 30px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.error button:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+
+}

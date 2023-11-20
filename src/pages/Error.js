@@ -3,7 +3,6 @@ function Error() {
     return (
        <section>
             <h1 className="error">
-                <span>:&#40; </span>
                 Error 404 Not Found 
                 <Link to='/' className="error-back">
                     <button>Back Home</button>
