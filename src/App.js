@@ -1,7 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
 import { createContext, useState } from 'react';
-import { useSelector, useDuspatch } from 'react-redux';
-import axios from 'axios';
 
 import Home from './pages/Home';
 import Cart from './pages/Cart';
